@@ -1,19 +1,26 @@
-//
-//  ViewController.swift
-//  Olearys
-//
-//  Created by Moussa El Lakki on 2022-05-12.
-//
+
 
 import UIKit
 
+import Firebase
+
 class ViewController: UIViewController {
 
+    var ref :  DatabaseReference!
+ 
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
 
+super.viewDidLoad()
+
+     ref = Database.database().reference()
+     ref.child("Look").setValue("Olyearys123")
+     
+  }
+    
+    
+    
+    
+    
 
 }
 
